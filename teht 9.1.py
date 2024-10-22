@@ -16,4 +16,4 @@ class auto:
 
 
 auto1= auto( "ABC-123", "142 kmh")
-print(f"{auto1.rekisteri} {auto1.huippunopeus}")
+print(f"{auto1.rekisteri} {auto1.huippunopeus} {auto1.hetkinopeus}kmh {auto1.matka}m")
