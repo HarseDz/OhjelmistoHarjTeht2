@@ -46,7 +46,7 @@ def randomkiihd():
 def main():
 
     for i in range(0,10):
-        luotu_auto=Auto(f"ABC{i}", randomhn(), 0, 0)
+        luotu_auto=Auto(f"Fiat {i}", randomhn(), 0, 0)
         autot.append(luotu_auto)
 
     while True:
