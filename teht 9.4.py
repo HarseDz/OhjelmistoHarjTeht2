@@ -46,7 +46,7 @@ def randomkiihd():
 def main():
 
     for i in range(0,10):
-        luotu_auto=Auto(f"Fiat {i}", randomhn(), 0, 0)
+        luotu_auto=Auto(f"Fiat Punto 200{i}", randomhn(), 0, 0)
         autot.append(luotu_auto)
 
     while True:
@@ -56,7 +56,7 @@ def main():
             if autot[i].matka >= 10000:
                 #print(autot[i].rekisteri, autot[i].huippunopeus, autot[i].matka)
                 for f in range(0,10):
-                    print(autot[f].rekisteri, autot[f].huippunopeus, autot[f].matka)
+                    print(f"{autot[f].rekisteri}, top speed {autot[f].huippunopeus} kmh, {autot[f].matka} meters")
                 exit()
 #def printx():
    # for i in range(0,10):
