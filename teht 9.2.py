@@ -12,9 +12,29 @@
 # -200 km/h ja tulosta uusi nopeus.
 # Kuljettua matkaa ei tarvitse vielä päivittää.
 class auto:
-    def __init__(self,rekisteri, huippunopeus,hetkinopeus=0, matka=0, kiihdts):
+    def __init__(self,rekisteri, huippunopeus,hetkinopeus, matka):
         self.rekisteri=rekisteri
         self.huippunopeus=huippunopeus
         self.hetkinopeus=hetkinopeus
         self.matka=matka
-        self.kiihdts=kiihdts
+    def kiihdytys(self, muutos):
+        self.hetkinopeus = self.hetkinopeus + muutos
+        if self.hetkinopeus > self.huippunopeus:
+            self.hetkinopeus = self.huippunopeus
+        elif self.hetkinopeus < 0:
+            self.hetkinopeus=0
+        else :
+            return self.hetkinopeus
+
+
+
+auto1 = auto("ABC-123", 142, 30, 0)
+
+auto1.kiihdytys(30)
+print(auto1.hetkinopeus)
+auto1.kiihdytys(50)
+print(auto1.hetkinopeus)
+auto1.kiihdytys(70)
+print(auto1.hetkinopeus)
+auto1.kiihdytys(-200)
+print(auto1.hetkinopeus)
