@@ -22,4 +22,3 @@ print(f"{koira.nimi} on syntynyt vuonna {koira.syntymavuosi}."
 # koira2.hauku(5)
 # print(f"{koira.nimi:s} on syntynyt vuonna {koira.syntymavuosi:d}.")
 # print(f"{tuntikoira.nimi:s} on syntynyt vuonna {tuntikoira.syntymavuosi:d}.")
-
