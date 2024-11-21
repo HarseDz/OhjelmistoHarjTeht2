@@ -34,12 +34,11 @@ class Hissi:
             print("Kerros ei real")
 
 class Talo:
-    def __init__(self, ylint, alint, hissilkm, tuli):
+    def __init__(self, ylint, alint, hissilkm):
         self.ylint = ylint
         self.alint = alint
         self.hissilkm = hissilkm
         self.hissit=[]
-        self.tuli = tuli
         for i in range(0, self.hissilkm):
             self.hissit.append(Hissi(self.ylint, self.alint))
 
@@ -50,15 +49,16 @@ class Talo:
         hissi.hissiliike(kerrosmaali)
 
 
-    def halytys(self, tuli):
+    def palohälytys(self):
 
+        for hissi in self.hissit:
+            hissi.hissiliike(hissi.alin)
 
 
 def main():
-    e = Talo(8,2,2)
+    e = Talo(8,0,2, )
     e.aja(1,7)
     e.aja(2, 4)
-    tuli == 1
-    e.aja(2, 8)
-    e.aja(1, 3)
+    e.palohälytys()
+
 main()
