@@ -18,6 +18,7 @@
 # Aseta kummallekin autolle haluamasi nopeus,
 # käske autoja ajamaan kolmen tunnin verran
 # ja tulosta autojen matkamittarilukemat.
+#matka on olemassa koska tämän avulla voidaan laskea jo kuljetun matkan päälle lisää matkaa
 
 class Auto:
     def __init__(self,rekisteri, huippunopeus, matka=0):
